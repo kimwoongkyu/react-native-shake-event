@@ -53,6 +53,10 @@ RCT_EXPORT_MODULE();
     [_bridge.eventDispatcher sendDeviceEventWithName:@"ShakeEvent"
                                                 body:nil];
 }
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
 
 @end
 
